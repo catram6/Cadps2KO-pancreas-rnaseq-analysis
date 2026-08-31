@@ -152,10 +152,10 @@ The thresholds used for each comparison were:
 
 | Comparison | Adjusted p-value | log2FC threshold |
 |---|---:|---:|
-| 6-month WT vs KO ｜ < 0.05 | ｜log2FC｜ > 1 |
-| 14-month WT vs KO ｜ < 0.05 | ｜log2FC｜ > 1 |
-| WT 6-month vs 14-month ｜ < 0.05 | ｜log2FC｜ > 2 |
-| KO 6-month vs 14-month ｜ < 0.05 | ｜log2FC｜ > 2 |
+| 6-month WT vs KO | < 0.05 | ｜log2FC｜ > 1 |
+| 14-month WT vs KO | < 0.05 | ｜log2FC｜ > 1 |
+| WT 6-month vs 14-month | < 0.05 | ｜log2FC｜ > 2 |
+| KO 6-month vs 14-month | < 0.05 | ｜log2FC｜ > 2 |
 
 The log2 fold-change thresholds were increased for some comparisons because the number of DEGs exceeded 3,000, which prevented downstream analysis using Metascape.
 
