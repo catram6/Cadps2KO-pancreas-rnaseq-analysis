@@ -155,7 +155,7 @@ The thresholds used for each comparison were:
 | 6-month WT vs KO | < 0.05 | |log2FC| > 1 |
 | 14-month WT vs KO | < 0.05 | |log2FC| > 1 |
 | WT 6-month vs 14-month | < 0.05 | |log2FC| > 2 |
-| KO 6-month vs 14-month | < 0.05 | |log2FC| > 3 |
+| KO 6-month vs 14-month | < 0.05 | |log2FC| > 2 |
 
 The log2 fold-change thresholds were increased for some comparisons because the number of DEGs exceeded 3,000, which prevented downstream analysis using Metascape.
 
@@ -165,10 +165,10 @@ The numbers of identified DEGs were:
 
 | Comparison | Upregulated | Downregulated | Total |
 |---|---:|---:|---:|
-| 6-month WT vs KO | 1,871 | TBD | TBD |
+| 6-month WT vs KO | 1,871 | 1,813 | 3,684 |
 | 14-month WT vs KO | 701 | 448 | 1,149 |
-| WT 6-month vs 14-month | 2,368 | 1,361 | 3,729 |
-| KO 6-month vs 14-month | 2,385 | 264 | 2,649 |
+| WT 6-month vs 14-month | 1,490 | 1,090 | 2,580 |
+| KO 6-month vs 14-month | 1,221 | 835 | 2,056 |
 
 The complete DESeq2 results and DEG lists are stored in the results/ directory.
 
