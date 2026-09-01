@@ -68,7 +68,7 @@ Genes were considered DEGs when they satisfied both an adjusted p-value threshol
 
 The thresholds used were:
 
-| Comparison | padj | |log2FC| |
+| Comparison | padj | ｜log2FC｜ |
 |---|---:|---:|
 | 6-month WT vs KO | < 0.05 | > 2 |
 | 14-month WT vs KO | < 0.05 | > 2 |
