@@ -189,9 +189,46 @@ The volcano plots were generated from the DESeq2 results.
 
 The DEG lists obtained from the four comparisons were compared to identify genes shared between different experimental comparisons.
 
-Genes were classified according to their occurrence patterns across the four DEG datasets.
+The four comparisons were defined as:
 
-Based on these patterns, genes were divided into seven subgroups.
+1. **KO aging:** KO 14-month vs 6-month
+2. **WT aging:** WT 14-month vs 6-month
+3. **14-month genotype comparison:** KO vs WT at 14 months
+4. **6-month genotype comparison:** KO vs WT at 6 months
+
+The KO aging DEGs were used as the main set for the overlap analysis. Genes were classified according to their occurrence across the four DEG datasets.
+
+To identify biologically consistent gene groups, only genes showing the **same direction of change (UP or DOWN)** across the corresponding comparisons were considered co-occurring. Genes showing opposite directions of change between comparisons were not included in the same subgroup.
+
+Based on these criteria, the DEGs were divided into seven subgroups:
+
+| Subgroup | Co-occurrence pattern | Total |
+|---|---|---:|
+| Subgroup 1 | KO aging + WT aging | 757 |
+| Subgroup 2 | KO aging + WT aging + 14-month genotype comparison | 28 |
+| Subgroup 3 | KO aging + WT aging + 6-month genotype comparison | 162 |
+| Subgroup 4 | KO aging + WT aging + 14-month genotype comparison + 6-month genotype comparison | 31 |
+| Subgroup 5 | KO aging + 14-month genotype comparison + 6-month genotype comparison | 3 |
+| Subgroup 6 | KO aging + 14-month genotype comparison | 161 |
+| Subgroup 7 | KO aging only | 914 |
+
+No genes were identified in the **KO aging + 6-month genotype comparison only** category. Therefore, this category was not included as an independent subgroup.
+
+### Direction of KO aging DEGs
+
+The number of upregulated and downregulated genes in each subgroup based on the KO aging comparison was:
+
+| Subgroup | Total | UP in KO aging | DOWN in KO aging |
+|---|---:|---:|---:|
+| Subgroup 1 | 757 | 407 | 350 |
+| Subgroup 2 | 28 | 27 | 1 |
+| Subgroup 3 | 162 | 54 | 108 |
+| Subgroup 4 | 31 | 17 | 14 |
+| Subgroup 5 | 3 | 2 | 1 |
+| Subgroup 6 | 161 | 152 | 9 |
+| Subgroup 7 | 914 | 562 | 352 |
+
+The seven subgroups were subsequently used for functional enrichment analysis using Metascape and ChIP-Atlas.
 
 ## Functional enrichment analysis
 
