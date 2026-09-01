@@ -51,7 +51,7 @@ The count matrices generated from the Galaxy analysis contained an additional no
 The count matrices were converted to numeric format using:
 
 ```r
-`storage.mode(count_matrix) <- "numeric"`
+storage.mode(count_matrix) <- "numeric"
 ```
 
 This generated NA values for the non-numeric row.
@@ -59,34 +59,63 @@ This generated NA values for the non-numeric row.
 The resulting NA-containing rows were removed using:
 
 ```r
-`count_matrix <- na.omit(count_matrix)`
+count_matrix <- na.omit(count_matrix)
 ```
 
 Genes with a total count of less than 10 across all samples were then excluded:
 
 ```r
-`keep <- rowSums(counts(dds)) >= 10`
+keep <- rowSums(counts(dds)) >= 10
 
-`dds <- dds[keep, ]`
+dds <- dds[keep, ]
 ```
 
 ## DEG criteria
 
-DEGs were identified using an adjusted p-value threshold of 0.05 and an absolute log2 fold-change threshold of 2.
+DEGs were identified using an adjusted p-value threshold of 0.05.
 
-### Upregulated genes
+The log2 fold-change threshold differed between genotype comparisons and aging comparisons.
 
-```r
+### Genotype comparisons: WT vs KO
+
+For the 6-month and 14-month WT vs KO comparisons, DEGs were defined as:
+
+**Upregulated:**
+
+`padj < 0.05 & log2FoldChange > 1`
+
+**Downregulated:**
+
+`padj < 0.05 & log2FoldChange < -1`
+
+Therefore, the DEG criterion was:
+
+`|log2FoldChange| > 1`
+
+### Aging comparisons: 6-month vs 14-month
+
+For the WT and KO aging comparisons, DEGs were defined using a more stringent fold-change threshold:
+
+**Upregulated:**
+
 `padj < 0.05 & log2FoldChange > 2`
-```
 
-### Downregulated genes
+**Downregulated:**
 
-```R
 `padj < 0.05 & log2FoldChange < -2`
-```
 
-The same DEG threshold was used for all four comparisons in the final analysis.
+Therefore, the DEG criterion was:
+
+`|log2FoldChange| > 2`
+
+## DEG criteria summary
+
+| Comparison | Adjusted p-value | log2FC threshold |
+|---|---:|---:|
+| 6-month WT vs KO | < 0.05 | ｜log2FC｜ > 1 |
+| 14-month WT vs KO | < 0.05 | ｜log2FC｜ > 1 |
+| WT 6-month vs 14-month | < 0.05 | ｜log2FC｜ > 2 |
+| KO 6-month vs 14-month | < 0.05 | ｜log2FC｜ > 2 |
 
 ## Output
 
