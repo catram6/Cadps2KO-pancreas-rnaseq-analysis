@@ -105,11 +105,7 @@ Each DEG subgroup was analyzed separately using Metascape and ChIP-Atlas.
 
 ### Metascape
 
-Metascape was used to investigate functional characteristics of each subgroup, including:
-
-- Gene Ontology biological processes
-- enriched pathways
-- functional categories
+Metascape was used to investigate functional characteristics of each subgroup.
 
 ### ChIP-Atlas
 
@@ -130,6 +126,6 @@ Cadps2 was specifically excluded from this visualization when highlighting these
 
 ## Current status
 
-The computational analysis has been completed.
+The analysis of the current datasets has been completed.
 
-The biological interpretation of the DEG subgroups and enrichment analysis results is ongoing, and experimental validation remains to be performed.
+The overall research project is ongoing, with biological interpretation of the DEG subgroups and enrichment analysis results in progress. Additional datasets will be incorporated, and experimental validation will be performed in future studies.
