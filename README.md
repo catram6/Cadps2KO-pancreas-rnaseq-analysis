@@ -17,6 +17,35 @@ The analysis was performed using Galaxy, R, and Python.
 
 The computational analysis has been completed, while biological interpretation and experimental validation are ongoing.
 
+## Background
+
+The pancreas is composed of two functionally distinct compartments: the 
+exocrine acinar tissue, which secretes digestive enzymes (e.g., amylase, 
+trypsin) into the gastrointestinal tract, and the endocrine islets, which 
+secrete hormones (e.g., insulin, glucagon) into the bloodstream. 
+Dysfunction of these compartments underlies pancreatitis and diabetes, 
+respectively, and the prevalence of both conditions is rising in an aging 
+society.
+
+Cadps2 (CAPS2) is a protein that promotes exocytosis of secretory 
+granules. Cadps2-knockout (KO) mice develop exocrine pancreatic 
+insufficiency as a result of impaired granule exocytosis. This study 
+aimed to elucidate the age-related progression of pancreatic pathology 
+and gene expression changes in Cadps2-KO mice.
+
+Histological analysis of KO pancreata revealed age-progressive acinar 
+cell atrophy and death, interstitial fibrosis, adipose replacement, 
+immune cell infiltration, and acinar-to-ductal metaplasia (ADM) — a 
+pathological profile reminiscent of human chronic pancreatitis. To 
+capture transcriptional changes at stages considered critical for the 
+onset and prevention of pancreatic disease, RNA-seq analysis was 
+performed at 6 months of age (young adulthood) and 14 months of age 
+(middle age). The results showed that, in addition to the gene 
+expression changes associated with normal pancreatic aging seen in WT 
+mice, KO mice exhibited additional transcriptional changes associated 
+with the progression of chronic pancreatitis and with compensatory 
+responses to it.
+
 ## Experimental design
 
 Four pairwise comparisons were performed:
