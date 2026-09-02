@@ -15,7 +15,7 @@ The four experimental groups were:
 
 The analysis was performed using Galaxy, R, and Python.
 
-The computational analysis has been completed, while biological interpretation and experimental validation are ongoing.
+The analysis of the current datasets has been completed, while the overall research project is ongoing.
 
 ## Background
 
@@ -357,13 +357,6 @@ Functional enrichment analyses were performed independently for each of the seve
 
 Each subgroup was analyzed using Metascape to investigate the biological characteristics of the genes.
 
-The analysis included:
-
-- Gene Ontology biological processes
-- enriched pathways
-- functional categories
-- biological process networks
-
 ### ChIP-Atlas
 
 ChIP-Atlas enrichment analysis was performed for each DEG subgroup.
@@ -434,8 +427,8 @@ The repository is intended to provide a record of the analysis workflow and faci
 
 ## Analysis status
 
-The computational analysis described in this repository has been completed.
+The RNA-seq analyses of the current four experimental groups (6-month-old WT, 6-month-old KO, 14-month-old WT, and 14-month-old KO) have been completed, including differential expression analysis, DEG overlap analysis, subgroup classification, and downstream enrichment analyses.
 
-Biological interpretation and experimental validation are ongoing.
+This repository currently documents the analysis performed using these datasets. However, the overall research project is ongoing, and additional datasets will be incorporated as the study progresses.
 
-Future work will focus on identifying candidate genes and molecular mechanisms associated with pancreatic aging and disease-related phenotypes, followed by experimental validation.
+Future work will extend the analysis by integrating newly generated or available datasets to further investigate the molecular mechanisms underlying pancreatic aging and disease-related phenotypes. Candidate genes and pathways identified through the integrated analyses will be further investigated and experimentally validated.
